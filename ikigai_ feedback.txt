@@ -1,0 +1,113 @@
+Below is the monthly ikigai feedback given by all the team mates to Ajinkya who is working as a Senior consultant in Devon software pvt ltd. Ajinkya works in a scrum team.
+
+April 2024
+Going well :
+Well handling email gateway project	
+Providing technical support across the Transformers and Titans teams + 3	
+Mentoring team for the technical growth 	
+Leads with example +1	
+Helping the team level up technically	
+Good blog - CQRS +3	
+Thanks for always removing roadblocks and empowering the team to work independently.	
+
+Areas to focus
+Suggestion - Try to schedule a KT session to share knowledge acquired with Email Gateway	
+Help juniors for setting SMART goal in Q2 +1 	
+
+May 2024
+Going well :
+Made a very good progress on notification engine in EG +2	
+Created the diagram and given a good presentataion to Jeroen +2	
+Attending system design training 	
+Helped QA for UI test cases	
+Good demo on how to use GitHub Copilot for development!	
+Proactiveness in sharing acquired knowledge with the team +1	
+Your continuous guidence for daily development tasks has been a game-changer for the team. And those demos are flawless.	
+Provides technical support to the team wherever necessary
+
+Areas to focus
+Going well :
+For future HR Native PBIs, additional support is needed to implement Exception and Successor functionalities along with Leave Type.	
+Continue to mentor juniors for the new role and Quarterly goal	
+
+June 2024
+Going well :
+Great intitative with Successor & Extensions. It has helped us immensely in building trust with Exact		
+Good job with the successor POC		
+A real team player		
+Shows others how it's done.		
+Congrats on finishing your goals ahead of time +2		
+Great showcase of prowess as developer with successors and exceptions.		
+Has a magic wand! Successor POC came as a shocker. Great work!		
+A crucial asset to the team.		
+Good job on helping to test Flex API + 1		
+
+July 2024
+Going well :
+Demonstrated excellent analysis and problem solving skills in the face of complicated tasks +1		
+Good job with the successor & exception POC - demonstrates your technical  acumen +1		
+A good team player, supports the team wherever necessary +2		
+Great job on the Successor POC! The client was impressed with your demo.		
+Thank you for helping us finalize the quarterly goals.		
+Set a role by completing all quarterly goal on time		
+Congratulations for the system design certification & DevOps foundation + 2		
+
+August 2024
+Going well :
+Solo heading and developing all key features for Successors and Exceptions + 2
+Somehow still has enough bandwidth to take up another project from another team.
+Really good in time management, can find bandwidth for multiple projects
+A top-notch solo performer and great team player
+Very good functional KT session. +1
+Thanks for helping with Successor PBI
+Excellent planning and execution for the Successor PBI + 1
+
+Areas to focus:
+Delegating Successors and Exceptions is hard so you can just leave all the grunt work to us
+You’re doing great, but don’t hesitate to ask for help when needed.
+
+September 2024
+Congrats on Promotion +2		
+Successful work with the successors. +1		
+		
+Good hunger for integrating AI with SDLC		
+Great work completing development for successors.		
+		
+Well executed successor development plan		
+Good estimation skills, that helped Jafer provide the Q4 estimates to the client.		
+Great work in handling Successors in the demo. Appreciation from Dennis speaks about the impact		
+Congrats on Promotion +2		
+Successful work with the successors. +1		
+		
+Good hunger for integrating AI with SDLC		
+Great work completing development for successors.		
+		
+Well executed successor development plan		
+Good estimation skills, that helped Jafer provide the Q4 estimates to the client.		
+Great work in handling Successors in the demo. Appreciation from Dennis speaks about the impact	
+
+Areas to focus
+Reserve some bandwidth for bugs that will come back from successors.	
+Continue to mentor the team members	
+Dont put rohits petproject or Dynamics365 project over HRnative XD	
+
+October 2024:
+Efficiently managed tasks between successors, exceptions and weird build failures		
+Good job on demo without panic + 1		
+Well exacuted Successor development and release plan + 1		
+Good work on IKIGAI Insights , First to take initaitive		
+Appreciate your effort for AI initiative		
+Good job on inspiring other team mebers to learn technical things including AI & code review + 1 	
+Successfully handled all the demos for Successors and Exceptions +1
+
+November 2024:
+Good job on completing exceptions development.  +1		
+Handles situation well when something weird happens during client demo call + 1		
+		
+Observed considerable improvement in demonstration and presentation skills. + 1		
+Well planned & executed the Exception development		
+Good job completing exceptions before taking long leave. + 1		
+Providing good support for the developers for completeing their PBI, helping us to achive the sprint goa	
+Areas to focus:
+Please focus on Quarterly goal	
+Make progress on our AI initiative	
