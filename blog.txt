@@ -1,0 +1,106 @@
+Pinecone is a specialized Vector Database (VectorDB) designed to manage and query vector embeddings, commonly used in machine learning and AI applications like semantic search, recommendations, and generative AI. It allows fast similarity search across high-dimensional vectors, which is essential for applications that involve finding the most similar vectors to a query vector, such as when using embeddings from large language models (LLMs).
+
+Here’s an end-to-end example showing how to use Pinecone with Python, including code snippets to create, query, and update a Pinecone index.
+
+Step 1: Setup Pinecone
+You will first need to install the Pinecone client and get your Pinecone API key by signing up at Pinecone.
+
+Install Pinecone Client
+pip install pinecone-client
+Initialize Pinecone
+import pinecone
+
+# Initialize Pinecone with your API key and environment
+pinecone.init(api_key="your-pinecone-api-key", environment="us-west1-gcp")
+
+# Check if Pinecone was initialized correctly
+print(pinecone.whoami())
+Step 2: Create a Pinecone Index
+An index is where vectors are stored. You can think of it like a table in a database.
+
+# Define index name
+index_name = "example-index"
+
+# Create an index with a 1536-dimensional vector space (for OpenAI embeddings)
+pinecone.create_index(index_name, dimension=1536)
+
+# List all available indexes
+print(pinecone.list_indexes())
+Step 3: Upload Data to Pinecone
+Before you upload data, you need to obtain embeddings from a model. Let’s assume you’re using OpenAI embeddings (which are 1536-dimensional).
+
+pip install openai
+import openai
+
+# Set OpenAI API key
+openai.api_key = "your-openai-api-key"
+
+# Function to generate embeddings from text using OpenAI API
+def get_embedding(text):
+    response = openai.Embedding.create(
+        input=text,
+        model="text-embedding-ada-002"
+    )
+    return response["data"][0]["embedding"]
+
+# Example texts to embed
+texts = ["Pinecone is a vector database", "Vector search enables similarity search", "Embeddings are used for semantic search"]
+
+# Generate embeddings for each text
+embeddings = [get_embedding(text) for text in texts]
+Now, store these embeddings in your Pinecone index.
+
+# Connect to the index
+index = pinecone.Index(index_name)
+
+# Create data points (IDs + vectors)
+items_to_upsert = [(f"item_{i}", embedding) for i, embedding in enumerate(embeddings)]
+
+# Upload vectors to Pinecone
+index.upsert(vectors=items_to_upsert)
+
+# Confirm the vectors are uploaded
+print(index.describe_index_stats())
+Step 4: Query the Pinecone Index
+Let’s query the index by passing a new embedding and finding the top similar vectors.
+
+# Query vector from a new sentence
+query_embedding = get_embedding("Find me something about vector search")
+
+# Query the Pinecone index to get the top 3 similar items
+query_result = index.query(queries=[query_embedding], top_k=3)
+
+# Display results
+for match in query_result['matches']:
+    print(f"ID: {match['id']}, Score: {match['score']}")
+Step 5: Update and Delete Data
+You can also update the vectors or delete entries from the index.
+
+Update an existing vector
+# New embedding for the same item
+new_embedding = get_embedding("Vector databases are useful in ML")
+
+# Update the existing vector with ID 'item_0'
+index.upsert(vectors=[("item_0", new_embedding)])
+
+# Check the updated vector
+print(index.describe_index_stats())
+Delete a vector from the index
+# Delete vector with ID 'item_0'
+index.delete(ids=["item_0"])
+
+# Confirm the deletion
+print(index.describe_index_stats())
+Step 6: Clean up resources
+Once you are done, you can delete the index to free resources.
+
+# Delete the index
+pinecone.delete_index(index_name)
+Summary
+In this example, you:
+
+Initialized Pinecone and created an index.
+Uploaded embeddings generated from text.
+Queried the index to find similar vectors.
+Updated and deleted vectors in the index.
+Pinecone makes it easy to scale and query vector embeddings, and its Python client integrates well with popular ML frameworks and models, making it ideal for semantic search, recommendation engines, and more.

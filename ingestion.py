@@ -8,7 +8,7 @@ from langchain_pinecone import PineconeVectorStore
 load_dotenv()
 if __name__=="__main__":
     print("Ingesting")
-    loader=TextLoader("~/PycharmProjects/intro-to-ector-dbs/ikigai_ feedback.txt")
+    loader=TextLoader("~/PycharmProjects/intro-to-ector-dbs/blog.txt")
     document= loader.load()
 
     print("splitting")
